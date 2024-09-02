@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
+
+Clone the repository:
+
+git clone [repository URL]
+cd [project directory]
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
+
+Install project's modules.
+
+```bash
+npm run dev
+```
+
+Runs the app in the development mode
+
+```bash
+npm run build
+```
+
+Builds the app for production
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Libraries and Tools
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Next.js - https://nextjs.org/
+React - https://react.dev/
+Tailwind CSS - https://tailwindcss.com/
+TypeScript - https://www.typescriptlang.org/
 
-## Learn More
+React feather - https://feathericons.com/
+Description - Is a collection of simply beautiful open source icons for React.js
 
-To learn more about Next.js, take a look at the following resources:
+## Definition
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This is a simplified structure of a simple chat.
+Implementation of adding messages and commands, popups for each type of commands.
+Types of Commands - USERS, SERVICES, EMOTES.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The architecture uses the Feature-Slice-Design (https://feature-sliced.design/).
+So here are missing such important nodes as API, WEBSockets, State Management.
 
-## Deploy on Vercel
+## What would I use for the real project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+API - axios (https://axios-http.com/docs/intro).
+API management with React-Query (https://tanstack.com/query/latest/docs/framework/react/overview).
+Depends on the project I would thought about using the material (https://mui.com/).
+Tailwind is lightweight what is its advantage.
+For forms always use React-Hook-Form (https://react-hook-form.com/).
+As state management - Zustand (https://zustand.docs.pmnd.rs/getting-started/introduction/).
+Also used Redux, but Zustand is easier to use and performs the same function.
